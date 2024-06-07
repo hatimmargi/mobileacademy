@@ -1,12 +1,8 @@
-.emphasize {
-  color: #7000ff;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   scroll-padding: 2em;
   color: #310070;
@@ -15,8 +11,7 @@
 header {
   margin-left: 3em;
   margin-right: 3em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 0;
   background-color: white;
   display: flex;
   align-items: center;
@@ -47,20 +42,17 @@ header button {
   gap: 0.5em;
   border: none;
   border-radius: 0.2em;
-  background-color: #f6c000;
   font-weight: 500;
   color: white;
   font-family: inherit;
-  padding: 1em 3em;
   cursor: pointer;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  background-color: #f6c000;
+  padding: 1em 3em;
 }
 header button:hover {
   background-color: #d0a300;
 }
-
-header > div {
+header #ham-nav-open {
   display: none;
 }
 
@@ -72,9 +64,12 @@ header > div {
   top: 0;
   right: 0;
   z-index: 1000;
-  display: grid;
-  place-content: center;
   display: none;
+  place-content: center;
+}
+.ham-nav.show {
+  display: grid;
+  transition: 0.3s ease-in-out;
 }
 .ham-nav .ham-nav-close {
   position: absolute;
@@ -96,15 +91,8 @@ header > div {
   text-decoration: none;
 }
 
-.ham-nav.show {
-  display: grid;
-  transition: ease-in-out;
-  transition-duration: 0.3s;
-}
-
 main section {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 main .hero-section {
   margin-left: 3em;
@@ -129,12 +117,12 @@ main .hero-section .left-side button {
   gap: 0.5em;
   border: none;
   border-radius: 0.2em;
-  background-color: #f6c000;
   font-weight: 500;
   color: white;
   font-family: inherit;
-  padding: 1em 3em;
   cursor: pointer;
+  background-color: #f6c000;
+  padding: 1em 3em;
   animation-delay: 0.4s;
 }
 main .hero-section .left-side button:hover {
@@ -166,16 +154,14 @@ main .courses-section .courses-section-info p {
   max-width: 750px;
 }
 main .courses-section .courses-section-info span {
-  background-color: rgba(111, 0, 255, 0.4862745098);
-  text-transform: capitalize;
+  background-color: rgba(112, 0, 255, 0.5);
+  text-transform: uppercase;
   font-size: 0.6em;
   border-radius: 2em;
   padding: 0.4em 0.8em;
   color: white;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: inherit;
 }
 main .courses-section .cards-container {
   display: flex;
@@ -192,10 +178,7 @@ main .courses-section .cards-container .card {
   max-width: 360px;
   gap: 2em;
   box-shadow: 18px 7px 93px -59px rgba(0, 0, 0, 0.57);
-  -webkit-box-shadow: 18px 7px 93px -59px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 18px 7px 93px -59px rgba(0, 0, 0, 0.57);
-  transition: transform ease-in-out;
-  transition-duration: 0.5s;
+  transition: transform 0.5s ease-in-out;
 }
 main .courses-section .cards-container .card img {
   width: 100%;
@@ -217,9 +200,8 @@ main .courses-section .cards-container .card .card-info h5 {
 main .courses-section .cards-container .card .card-info p {
   font-size: 0.9em;
   opacity: 0.7;
-  max-width: 300px;
-  margin-bottom: 0.2em;
   max-width: 90%;
+  margin-bottom: 0.2em;
 }
 main .courses-section .cards-container .card .card-info button {
   display: flex;
@@ -228,15 +210,15 @@ main .courses-section .cards-container .card .card-info button {
   gap: 0.5em;
   border: none;
   border-radius: 0.2em;
-  background-color: #f6c000;
   font-weight: 500;
   color: white;
   font-family: inherit;
-  padding: 1em 3em;
   cursor: pointer;
+  background-color: #f6c000;
+  font-size: 0.9em;
+  padding: 0.5em 1.5em;
   background-color: #7000ff;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  padding: 0.8em;
   width: 80%;
 }
 main .courses-section .cards-container .card .card-info button:hover {
@@ -260,16 +242,14 @@ main .how-it-works-section .how-it-works-section-info {
   margin-bottom: 2em;
 }
 main .how-it-works-section .how-it-works-section-info span {
-  background-color: rgba(111, 0, 255, 0.4862745098);
-  text-transform: capitalize;
+  background-color: rgba(112, 0, 255, 0.5);
+  text-transform: uppercase;
   font-size: 0.6em;
   border-radius: 2em;
   padding: 0.4em 0.8em;
   color: white;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: inherit;
 }
 main .how-it-works-section .how-it-works-section-info h2 {
   font-weight: 600;
@@ -290,7 +270,6 @@ main .how-it-works-section .steps-container .step {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   gap: 0.5em;
 }
 main .how-it-works-section .steps-container .step img {
@@ -309,16 +288,14 @@ main .how-it-works-section .steps-container .step p {
   opacity: 0.7;
 }
 main .how-it-works-section .steps-container .step span {
-  background-color: rgba(111, 0, 255, 0.4862745098);
-  text-transform: capitalize;
+  background-color: rgba(112, 0, 255, 0.5);
+  text-transform: uppercase;
   font-size: 0.6em;
   border-radius: 2em;
   padding: 0.4em 0.8em;
   color: white;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: inherit;
   color: #310070;
   background-color: white;
   font-weight: 700;
@@ -347,16 +324,14 @@ main .about-us-section .about-us-section-info p {
   opacity: 0.7;
 }
 main .about-us-section .about-us-section-info span {
-  background-color: rgba(111, 0, 255, 0.4862745098);
-  text-transform: capitalize;
+  background-color: rgba(112, 0, 255, 0.5);
+  text-transform: uppercase;
   font-size: 0.6em;
   border-radius: 2em;
   padding: 0.4em 0.8em;
   color: white;
   font-weight: 600;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: inherit;
 }
 main .about-us-section img {
   width: 100%;
@@ -418,8 +393,7 @@ footer p {
     margin-right: 2em;
   }
   footer {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 2em;
   }
   header .logo {
     width: 20vw;
@@ -434,13 +408,13 @@ footer p {
     gap: 0.5em;
     border: none;
     border-radius: 0.2em;
-    background-color: #f6c000;
-    font-size: 0.9em;
     font-weight: 500;
     color: white;
     font-family: inherit;
-    padding: 0.5em 1.5em;
     cursor: pointer;
+    background-color: #f6c000;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
   }
   main .hero-section .left-side h1 {
     font-size: 2em;
@@ -455,13 +429,13 @@ footer p {
     gap: 0.5em;
     border: none;
     border-radius: 0.2em;
-    background-color: #f6c000;
-    font-size: 0.9em;
     font-weight: 500;
     color: white;
     font-family: inherit;
-    padding: 0.5em 1.5em;
     cursor: pointer;
+    background-color: #f6c000;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
   }
   main .courses-section .courses-section-info h2,
   main .about-us-section .about-us-section-info h2,
@@ -493,13 +467,13 @@ footer p {
     gap: 0.5em;
     border: none;
     border-radius: 0.2em;
-    background-color: #f6c000;
-    font-size: 0.9em;
     font-weight: 500;
     color: white;
     font-family: inherit;
-    padding: 0.5em 1.5em;
     cursor: pointer;
+    background-color: #f6c000;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
     background-color: #7000ff;
   }
   main .how-it-works-section .steps-container {
@@ -547,8 +521,7 @@ footer p {
 }
 @media only screen and (max-width: 570px) {
   main section {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
   }
   header .logo {
     width: 30vw;
@@ -557,7 +530,7 @@ footer p {
   header button {
     display: none;
   }
-  header > div {
+  header #ham-nav-open {
     display: block;
   }
   .hero-section {
@@ -579,8 +552,6 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-items: center;
-    justify-content: center;
     gap: 2em;
   }
   .how-it-works-section .steps-container button {
@@ -596,17 +567,6 @@ footer p {
     font-size: 0.5em;
   }
 }
-/* ----------------------------------------------
- * Generated by Animista on 2024-6-6 17:32:3
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
 .slide-top {
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
