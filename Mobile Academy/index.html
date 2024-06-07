@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importing Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Mobile Academy</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./svg/logo.svg" alt="Mobile Academy Logo" />
+      <nav>
+        <ul>
+          <li><a href="#courses-section">Courses</a></li>
+          <li><a href="#how-it-works-section">How it Works</a></li>
+          <li><a href="#about-us-section">About Us</a></li>
+          <li><a href="#testimonials-section">Testimonials</a></li>
+        </ul>
+      </nav>
+      <button>Login</button>
+      <div id="ham-nav-open" class="ham-nav-open">
+        <a href="#"
+          ><img class="ham-menu" src="./svg/ham-menu.svg" alt="menu"
+        /></a>
+      </div>
+    </header>
+    <div id="ham-nav" class="ham-nav">
+      <img
+        id="ham-nav-close"
+        class="ham-nav-close"
+        src="./svg/close-ham.svg"
+        alt=""
+      />
+      <ul>
+        <li><a href="#courses-section">Courses</a></li>
+        <li><a href="#how-it-works-section">How it Works</a></li>
+        <li><a href="#about-us-section">About Us</a></li>
+        <li><a href="#testimonials-section">Testimonials</a></li>
+      </ul>
+    </div>
+    <main>
+      <section class="hero-section">
+        <div class="left-side">
+          <h1 class="slide-top">
+            Learn Anytime, Anywhere with
+            <span class="emphasize"> Mobile Academy</span>
+          </h1>
+          <p class="slide-top">
+            Access a diverse range of high-quality courses on business, fitness,
+            personal development, science, and arts exclusively on your mobile.
+          </p>
+          <button class="slide-top">
+            Subscribe Now
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="right-side">
+          <img
+            class="slide-top"
+            src="./imgs/Globe and Graduation Hat 1.png"
+            alt="Globe and Graduation Hat"
+          />
+        </div>
+      </section>
+      <section id="courses-section" class="courses-section">
+        <div
+          class="courses-section-info"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="-200"
+        >
+          <span>Courses</span>
+          <h2>Browse Courses Categories</h2>
+          <p>
+            Access a diverse range of high-quality courses on business, fitness,
+            personal development, science, and arts exclusively on your mobile.
+          </p>
+        </div>
+        <div
+          class="cards-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="-200"
+        >
+          <div class="card">
+            <img
+              src="./imgs/personal-development-cover.png"
+              alt="Course Preview"
+            />
+            <div class="card-info">
+              <h5>Personal Development Courses</h5>
+              <p>Courses on time management, communication, and more.</p>
+              <button>
+                Subscribe
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imgs/course header.png" alt="Course Preview" />
+            <div class="card-info">
+              <h5>Science Courses</h5>
+              <p>
+                Satisfy your curiosity with courses on a wide range of
+                scientific topics.
+              </p>
+              <button>
+                Subscribe
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imgs/web-dev-cover.png" alt="Course Preview" />
+            <div class="card-info">
+              <h5>Web Development Courses</h5>
+              <p>
+                Achieve your fitness goals with guided workouts and nutrition
+                advice.
+              </p>
+              <button>
+                Subscribe
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imgs/business-course-cover.png" alt="Course Preview" />
+            <div class="card-info">
+              <h5>Business & Finance Courses</h5>
+              <p>
+                Master business skills with courses in leadership, marketing,
+                and more.
+              </p>
+              <button>
+                Subscribe
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imgs/fitness-course-cover.png" alt="Course Preview" />
+            <div class="card-info">
+              <h5>Fitness & Sports Courses</h5>
+              <p>
+                Achieve your fitness goals with guided workouts and nutrition
+                advice.
+              </p>
+              <button>
+                Subscribe
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./imgs/art-course-cover.png" alt="Course Preview" />
+            <div class="card-info">
+              <h5>Art Courses</h5>
+              <p>
+                Unleash your creativity with courses in music, painting,
+                photography, and more
+              </p>
+              <button>
+                Subscribe
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 12L17 12M17 12L13 8M17 12L13 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works-section" class="how-it-works-section">
+        <div
+          class="how-it-works-section-info"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="-200"
+        >
+          <span>HOW IT WORKS</span>
+          <h2>Few Small Steps to Join Mobile Academy</h2>
+          <p>
+            Access a diverse range of high-quality courses on business, fitness,
+            personal development, science, and arts exclusively on your mobile.
+          </p>
+        </div>
+        <div
+          class="steps-container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-offset="-200"
+        >
+          <div class="step">
+            <img src="./svg/person_outline 1.svg" alt="Step 1 Icon" />
+            <span>Step 1</span>
+            <h5>Sign Up</h5>
+            <p>Create your account quickly and easily that suits you best.</p>
+          </div>
+          <div class="step">
+            <img src="./svg/Vector.svg" alt="Step 2 Icon" />
+            <span>Step 2</span>
+            <h5>Choose a Plan</h5>
+            <p>Select the subscription plan that suits you best.</p>
+          </div>
+          <div class="step">
+            <img src="./svg/book.svg" alt="Step 3 Icon" />
+            <span>Step 3</span>
+            <h5>Start Learning</h5>
+            <p>
+              Dive into our extensive library of courses and start learning.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="about-us-section"
+        class="about-us-section"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-offset="-200"
+      >
+        <div class="about-us-section-info">
+          <span>About Us</span>
+          <h2>What is Mobile Academy?</h2>
+          <!-- <p>
+            Welcome to Mobile Academy, your premier destination for high-quality
+            mobile learning. Our mission is to make premium education accessible
+            to everyone, anytime, anywhere, through your mobile device.
+          </p> -->
+          <p>
+            Mobile Academy was founded on the belief that education should be
+            flexible, engaging, and accessible. We understand the challenges of
+            balancing a busy life with the desire to learn and grow. That’s why
+            we created a platform that allows you to pursue your learning goals
+            at your own pace, whether you're commuting, traveling, or simply
+            relaxing at home.
+          </p>
+        </div>
+        <img src="./imgs/teacher.png" alt="Teacher" />
+      </section>
+      <section
+        id="testimonials-section"
+        class="testimonials-section"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-offset="-200"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2.9925 19.5062H7.49625L10.4988 13.5012V4.49365H1.49125V13.5012H5.995L2.9925 19.5062ZM15.0025 19.5062H19.5063L22.5088 13.5012V4.49365H13.5013V13.5012H18.005L15.0025 19.5062Z"
+            fill="#7000FF"
+          />
+        </svg>
+        <p>
+          "This app transformed my learning experience! The courses are
+          top-notch, and I love how I can learn anywhere, anytime."
+        </p>
+        <div class="testimonial-owner">
+          <img src="./imgs/avatar.png" alt="John Doe Avatar" />
+          <h5>Tom Sinatra Rodriguez</h5>
+          <h6>Senior Software Engineer at Google</h6>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <img
+          class="logo"
+          src="./svg/white logo.svg"
+          alt="Mobile Academy White Logo"
+        />
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p>&copy; 2024 Mobile Academy, All rights reserved</p>
+    </footer>
+
+    <!--Adding AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+<script src="index.js"></script>
+  </body>
+</html>
