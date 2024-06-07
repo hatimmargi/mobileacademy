@@ -106,6 +106,9 @@ main .hero-section .left-side h1 {
   margin-bottom: 0.5em;
   animation-delay: 0s;
 }
+main .hero-section .left-side .emphasize {
+  color: #7000ff;
+}
 main .hero-section .left-side p {
   margin-bottom: 1em;
   animation-delay: 0.2s;
